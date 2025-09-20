@@ -111,6 +111,10 @@ func getContextualEmoji(msg string) string {
 		return "🚀"
 	}
 
+	if stringContains(lowerMsg, "metrics") {
+		return "📊"
+	}
+
 	if stringContains(lowerMsg, "success") {
 		return "🎉"
 	}
